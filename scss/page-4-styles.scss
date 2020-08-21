@@ -1,0 +1,146 @@
+/* Page 1 */
+
+
+.hero{
+    text-align: right;
+    background-image: url("../assets/images/img-desktop1-hero-blank.png");
+}
+
+.hero-form{
+    text-align: right;
+}
+
+.hero button, .card button{
+    color: #fff;
+    background-color: #FF7400;
+    border: 2px solid #FF7400;
+}
+
+.hero button:hover, .card button:hover{
+    transition: all 0.5s ease;
+    color: #FF7400;
+    background-color: #fff;
+    border-color: #df6400;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .hero-form{
+        text-align: center;
+    }
+}
+
+/*///////////////////
+    Item Section
+*/
+
+.card-columns{
+    column-count: 1;
+    margin-top: 50px;
+}
+
+.card{
+    color: #fff;
+    text-align: center;
+    background-color: #182749;
+}
+
+.card a{
+    margin-top: 10px;
+    color: #ff9d4d;
+}
+
+.card p{
+    font-size: 1.3rem;
+    margin: 35px 0;
+}
+
+.card-img-top{
+    background-color: #fff;
+}
+
+.card ul{
+    list-style: none;
+    padding: 0;
+}
+
+.card li{
+    color: #ff9d4d;
+    margin-top: 5px;;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .card-columns{
+        column-count: 2;
+    }
+}
+
+/*///////////////////
+    Info Section
+*/
+.info-container_full{
+    margin-top: 50px;
+    padding: 0;
+    color: #fff;
+    background-color: #182749;
+}
+
+.info{
+    margin-top: 0;
+}
+
+.info h3{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.info-text{
+    padding: 15px 25px;
+}
+
+@media (min-width: 992px) {
+    .info-text{
+        padding: 15px 90px;
+    }
+}
+
+/*///////////////////
+    Contact Section
+*/
+
+.contact-box{
+    background-image: url("../assets/images/asphalt_texture409.png");
+    border: 2px solid #000;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 175px;
+    -webkit-box-shadow: 5px 5px 3px 0px #aeaeae;
+    box-shadow: 5px 5px 3px 0px #aeaeae;
+}
+
+.contact-container a:hover{
+    transition: all 0.3s ease;
+    border: 2px solid #fedd00;
+    -webkit-box-shadow: 2px 2px 3px 0px #aeaeae;
+    box-shadow: 2px 2px 3px 0px #aeaeae;
+}
+
+.contact-box p{
+    font-family: 'Badaboom', 'Impact', fantasy;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact-box p{
+    color: #fff;
+}
+
+.contact-box p:last-child{
+    color:#fedd00;
+}
+

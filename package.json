@@ -1,0 +1,16 @@
+{
+  "name": "on-sale-pages-sass",
+  "version": "1.0.0",
+  "description": "A/B Test Sales Pages",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Alec Wertheimer",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

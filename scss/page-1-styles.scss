@@ -1,0 +1,295 @@
+/* Page 1 */
+@font-face {
+    font-family: 'Badaboom';
+    src: url('../assets/font/BADABB.woff2') format('woff2'),
+         url('../assets/font/BADABB.woff') format('woff'),
+         url('../assets/font/BADABB.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6, .cta-font{
+    font-family: 'Badaboom', sans-serif!important;
+}
+
+h1{
+    font-size: 4rem!important;
+    color: #fedd00!important;
+}
+
+h2{
+    font-size: 3rem!important;
+    text-align: center!important;
+}
+
+h3{
+    font-size: 2.5rem!important;
+}
+
+p{
+    font-size: 1rem!important;
+}
+
+img {
+    max-width: 100%!important;
+    height: auto!important;
+}
+
+a:hover{
+    text-decoration: none!important;
+}
+
+.btn, #update-email{
+    border-radius: 3px!important;
+}
+
+.rotated {
+    transform: rotate(-5deg)!important;
+    margin-bottom: 20px!important;
+}
+
+.spaced{
+    line-height: 1!important;
+    letter-spacing: .2rem!important;
+    word-spacing: .5rem!important;
+}
+
+.container{
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+    margin-top: 50px!important;
+}
+
+/* This lets you put a span around text you want on one line*/
+.new-line::before {
+    content: '\A'!important; 
+    white-space: pre!important;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .new-line::before {content: ' '!important; white-space: pre!important;}
+}
+
+/*///////////////////
+    Hero Section
+*/
+
+.hero{
+    /* Set background image on specific page CSS */
+    height: 600px!important;
+    padding: 0!important;
+    text-align: right!important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../assets/images/img-desktop1-hero-blank.png")!important;
+}
+
+.hero-form{
+    height: 100%!important;
+    width: 100%!important;
+    text-align: right!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%!important;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 27%, rgba(0,0,0,0.7) 100%)!important;
+
+    b, label{
+        color: #fff!important;
+    }
+}
+
+.form-group{
+    margin-top: 10px!important;
+    width: 300px!important;
+}
+
+.cta-btn{
+    max-width: 300px!important;
+    width: 100%
+}
+
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .hero{
+        text-align: center!important;
+    }
+
+    .hero-form{
+        text-align: center!important;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-form{
+        padding-right: 5%!important;
+        background: none!important;
+        max-width: 1000px!important;
+        background: none!important;
+    }
+}
+
+/*///////////////////
+    Item Section
+*/
+.item{
+    margin-top: 40px!important;
+    height: 350px!important;
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: space-between!important;
+    align-items: center;
+
+    img{
+        height: 200px!important;
+        margin:5px 0!important;
+        -webkit-box-shadow: 1px 1px 1px 1px #D4D4D4!important;
+        box-shadow: 1px 1px 1px 1px #D4D4D4!important;
+    }
+
+    button{
+        margin-top: 10px!important;
+        padding: 15px 20px!important;
+    }
+
+}
+
+.item-image{
+    position: relative!important;
+
+}
+
+
+.price{
+    background-image: url('../assets/images/starburst-orange.png')!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    position: absolute!important;
+    z-index: 1!important;
+    width: 80px!important;
+    height: 80px!important;
+    top: -25px!important;
+    right: -25px!important;
+    text-align: center!important;
+    vertical-align: middle!important;
+}
+
+.price::after{
+    content: ""!important;
+    z-index: -1!important;
+}
+
+.price-text{
+    margin: auto!important;
+}
+
+.price-text b{
+    margin: 0!important;
+    font-size: .9rem!important;
+    color: #fff!important;
+    line-height: 1.2!important;
+}
+
+.price-text b:last-child{
+    font-family: 'Badaboom', 'Impact', fantasy!important;
+    font-size: 1.2rem!important;
+    font-weight: 500!important;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .item button{
+        padding: 10px!important;
+    }
+}
+
+/*///////////////////
+    Info Section
+*/
+.info{
+    flex-direction: column!important;
+    margin-top: 40px!important;
+
+    img{
+        padding: 0!important;
+    }
+
+    p{
+        padding: 10px 0 0!important;
+    }
+}
+
+.info-text{
+    margin-top: 15px!important;
+}
+
+@media (min-width: 992px) {
+    .info{
+        flex-direction: row!important;
+        
+        img{
+            padding-right: 30px!important;
+        }
+    }
+}
+
+/*///////////////////
+    Testimonials Section
+*/
+
+.testimonial-row{
+    margin-top: 40px!important;
+}
+
+.testimonial{
+    img{
+        width: 150px
+    }
+
+    p{
+        margin-top: 10px!important;
+    }
+
+    p:last-child{
+        font-weight: 600!important;
+    }
+} 
+
+/*///////////////////
+    Contact Section
+*/
+
+.contact-container{
+    a:hover{
+        transition: all 0.3s ease!important;
+        border: 2px solid #fedd00!important;
+        -webkit-box-shadow: 2px 2px 3px 0px #aeaeae!important;
+        box-shadow: 2px 2px 3px 0px #aeaeae!important;
+    }
+} 
+
+.contact-box{
+    background-image: url("../assets/images/asphalt_texture409.png")!important;
+    border: 2px solid #000!important;
+    margin-top: 20px!important;
+    display: flex!important;
+    text-align: center!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    height: 175px!important;
+    -webkit-box-shadow: 5px 5px 3px 0px #aeaeae!important;
+    box-shadow: 5px 5px 3px 0px #aeaeae!important;
+
+    p{
+        font-family: 'Badaboom', 'Impact', fantasy!important;
+        font-size: 2rem!important;
+        font-weight: 500!important;
+        color: #fff!important;
+    }
+
+    p:last-child{
+        color:#fedd00!important;
+    }
+}

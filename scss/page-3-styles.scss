@@ -1,0 +1,163 @@
+/* Page 2 */
+
+body{
+    background-color: #fff;
+}
+
+button, input{
+    border-radius: 2px;
+}
+
+h2{
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #182749;
+}
+
+h3{
+    text-align: center;
+}
+
+a{
+    margin-top: 5px;
+}
+
+/*///////////////////
+    Hero Section
+*/
+
+.hero{
+    background-image: url("../assets/images/img-desktop3-hero-blank.png");
+    background-position-x: left;
+}
+
+.hero-form{
+    background: none;
+}
+
+/*///////////////////
+    Item Section
+*/
+
+.grey{
+    margin-top: 20px;
+    padding: 40px 25px;
+    background-color: #efefef;
+}
+
+.item-img{
+    margin-bottom: 20px;
+}
+
+.links{
+    margin-top: 20px;
+}
+
+.sm-h3{
+    display: block;
+}
+
+.md-h3{
+    display: none;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .sm-h3{
+        display: none;
+    }
+    
+    .md-h3{
+        display: block;
+    }
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 992px) {
+    .item-container{
+        margin-top: 90px;
+        margin-bottom: 90px;
+        padding: 0;
+    }
+
+    .item-img{
+        margin-top: 0px;
+    }
+
+    .item-img{
+        margin-bottom: 0;
+    }
+}
+
+
+/*///////////////////
+    Info Section
+*/
+.info-container_full{
+    margin-top: 50px;
+    padding: 0;
+    color: #fff;
+    background-color: #182749;
+}
+
+.info{
+    margin-top: 0;
+}
+
+.info h3{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.info-text{
+    padding: 15px 25px;
+}
+
+@media (min-width: 992px) {
+    .info-text{
+        padding: 15px 90px;
+    }
+}
+
+
+
+/*///////////////////
+    Testimonial Section
+*/
+
+.testimonial-container h3{
+    text-align: center;
+}
+
+.testimonial{
+    margin-top: 20px;
+    padding: 20px;
+    height: 400px;
+    color: #fff;
+    background-color: #182749;
+}
+
+.testimonial p:last-child{
+    font-weight: 700;
+}
+
+/*///////////////////
+    Contact Section
+*/
+.contact{
+    margin-top: 70px;
+}
+
+.contact h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .contact h3{
+        font-size: 3rem;
+    }
+}
+
