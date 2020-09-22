@@ -1,120 +1,345 @@
-/* Page 2 */
-body {
-  background-color: #fff; }
+/*///////////////////
+    Global
+*/
 
-button, input {
-  border-radius: 2px; }
+.main{
+  padding: 0 !important;
+}
+
+@font-face {
+  font-family: 'Badaboom';
+  src: url('https://media.trafficsafetystore.com/raw/upload/v1598034077/fonts/BadaBoom-BB-V1.woff2') format('woff2'),
+       url('https://media.trafficsafetystore.com/raw/upload/v1598034797/fonts/BadaBoom-BB-V1.woff') format('woff'),
+       url('https://media.trafficsafetystore.com/raw/upload/v1598034797/fonts/BadaBoom-BB-V1.ttf') format('ttf');
+}
+
+body {
+  background-color: #efefef !important;}
+
+#badaboom, .cta-font {
+  font-family: 'Badaboom', sans-serif !important; 
+  font-weight: 500 !important;
+}
+
+h1 {
+  font-size: 4rem !important;
+  color: #fedd00 !important; 
+  -webkit-text-stroke: 2px black !important;
+}
 
 h2 {
-  margin-bottom: 20px;
-  padding: 10px 0;
-  color: #fff;
-  background-color: #182749; }
+  font-size: 3rem !important;
+  margin-top: 0 !important;
+  display: flex !important; 
+  justify-content: center !important;
+  flex-direction: column !important;
+  margin-bottom: 20px !important;
+  padding: 10px 0 !important;
+  color: #fff !important;
+  background-color: #182749 !important;
+  text-align: center !important;
+  line-height: 1 !important;
+}
 
-h3 {
-  text-align: center; }
+.sales-h3 {
+  font-size: 2.5rem !important; }
 
-a {
-  margin-top: 5px; }
+.sales-p {
+  font-size: 1rem !important; }
 
+img {
+  max-width: 100% !important;
+  height: auto !important; }
+
+a:hover {
+  text-decoration: none !important; }
+
+.product-list{
+  display: block !important;
+  list-style-type: disc !important;
+  margin-block-start: 1em !important;
+  margin-block-end: 1em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+  padding-inline-start: 40px !important;
+}
+
+.cta-btn, #update-email {
+  border-radius: 3px !important; 
+  margin: 10px 0 !important;}
+
+.rotated {
+  transform: rotate(-5deg) !important;
+  margin-bottom: 20px !important; }
+
+.spaced {
+  line-height: 1 !important;
+  letter-spacing: .2rem !important;
+  word-spacing: .5rem !important; 
+  width: 700px;
+}
+
+.container {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  margin-top: 50px !important; }
+
+button, input {
+  border-radius: 2px !important; 
+}
+
+.testimonial img {
+    width: 150px !important;
+}
+
+/* This lets you put a span around text you want on one line*/
+.new-line::before {
+  white-space: pre !important;
+  line-height: 1 !important;
+ }
+
+.sm-h3{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.md-h3{
+  display: none !important;
+}
+
+.grey{
+  background: #e0dfdf !important;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+  .new-line::before {
+    content: " " !important;
+    white-space: pre !important; 
+  }
+
+  h2{
+    font-size: 3rem !important;
+    flex-direction: row !important;
+  }
+
+  .sm-h3{
+    display: none !important;
+  }
+
+  .md-h3{
+    display: flex !important;
+  }
+}
 /*///////////////////
     Hero Section
 */
 .hero {
-  background-image: url("../assets/images/img-desktop3-hero-blank.png");
-  background-position-x: left; }
+  /* Set background image on specific page CSS */
+  height: 600px !important;
+  padding: 0 !important;
+  text-align: right !important;
+  display: fle !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  background-image: url("https://media.trafficsafetystore.com/image/upload/v1598281279/SalesPages/img-desktop3-hero-blank.png") !important;
+  background-position-x: center !important;
+}
 
 .hero-form {
-  background: none; }
+  height: 100% !important;
+  width: 100% !important;
+  text-align: right !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  padding: 0 5% !important;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.7) 100%) !important; }
+  .hero-form b, .hero-form label {
+    color: #fff !important; }
 
-/*///////////////////
-    Item Section
-*/
-.grey {
-  margin-top: 20px;
-  padding: 40px 25px;
-  background-color: #efefef; }
+.form-group {
+  margin-top: 10px !important;
+  width: 300px !important; }
 
-.item-img {
-  margin-bottom: 20px; }
+.cta-btn {
+  max-width: 300px !important;
+  width: 100% !important;
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important; 
+    background-image: none !important;}
 
-.links {
-  margin-top: 20px; }
-
-.sm-h3 {
-  display: block; }
-
-.md-h3 {
-  display: none; }
+.cta-btn:hover{
+    background-color: #005ec5 !important;
+    border-color: #005ec5 !important; 
+}
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
 @media (min-width: 768px) {
-  .sm-h3 {
-    display: none; }
-  .md-h3 {
-    display: block; } }
+  .hero {
+    text-align: center !important;
+  }
+  
+  .hero-form {
+    text-align: center !important;
+    align-items: center !important;
+  } 
+}
+
+@media (min-width: 992px) {
+  .hero-form {
+    padding-right: 5% !important;
+    background: none !important;
+    max-width: 1000px !important;
+    background: none !important; 
+  } 
+}
+
+/*///////////////////
+    Items Section
+*/
+
+.item-container_grey {
+  padding: 50px 30px;
+}
+
+.item{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 40p !important;
+}
+
+.links{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.img-left, .img-right{
+  order: 0 !important;
+  margin: 10px 0 !important;
+}
+
+.img-left .item-img{
+  display: flex !important;
+  justify-content: flex-start !important;
+}
+
+.img-right .item-img{
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.text-left, .text-right{
+  order: 1 !important;
+  text-align: left !important;
+  width: 450px !important;
+}
+
+.item img{
+  width: 100% !important;
+  max-width: 500px !important;
+}
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
-@media (min-width: 992px) {
-  .item-container {
-    margin-top: 90px;
-    margin-bottom: 90px;
-    padding: 0; }
-  .item-img {
-    margin-top: 0px; }
-  .item-img {
-    margin-bottom: 0; } }
+@media (min-width: 768px) {
+  .item{
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 40px 0 !important;
+  }
+
+  .img-right{
+    order: 0 !important;
+  }
+  
+  .img-left{
+    order: 1 !important;
+  }
+  
+  .text-right{
+    order: 0 !important;
+  }
+  
+  .text-left{
+    order: 1 !important;
+  }
+}
 
 /*///////////////////
     Info Section
 */
 .info-container_full {
-  margin-top: 50px;
-  padding: 0;
-  color: #fff;
-  background-color: #182749; }
+  margin-top: 50px !important;
+  padding: 20px 0 !important;
+  color: #fff !important;
+  background-color: #182749 !important; }
 
 .info {
-  margin-top: 0; }
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin-top: 0 !important; }
 
 .info h3 {
-  margin-top: 20px;
-  text-align: center;
-  color: #fff; }
+  margin-top: 20px !important;
+  text-align: center !important;
+  color: #fff !important; }
 
 .info-text {
-  padding: 15px 25px; }
+  padding: 15px 25px !important; }
+
+  /* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+  .info {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-top: 0 !important; }
+}
 
 @media (min-width: 992px) {
   .info-text {
-    padding: 15px 90px; } }
+    padding: 15px 90px !important; } }
+
 
 /*///////////////////
     Testimonial Section
 */
 .testimonial-container h3 {
-  text-align: center; }
+  text-align: center !important; 
+}
 
 .testimonial {
-  margin-top: 20px;
-  padding: 20px;
-  height: 400px;
-  color: #fff;
-  background-color: #182749; }
+  margin: 20px 0 50px !important;
+  padding: 20px !important;
+  height: 400px !important;
+  color: #fff !important;
+  background-color: #182749 !important; 
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
 
 .testimonial p:last-child {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 /*///////////////////
     Contact Section
 */
 .contact {
-  margin-top: 70px; }
+  margin: 70px 25px !important; }
 
 .contact h3 {
-  font-size: 3rem;
-  text-align: center; }
+  font-size: 3rem !important;
+  text-align: center !important; }
 
 @media (min-width: 992px) {
   .contact h3 {
-    font-size: 3rem; } }
+    font-size: 3rem !important; } }

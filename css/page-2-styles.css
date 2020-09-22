@@ -1,150 +1,350 @@
 /* Page 2 */
+
+/*///////////////////
+    Global
+*/
+
+.main{
+  padding: 0 !important;
+}
+
+@font-face {
+  font-family: 'Badaboom';
+  src: url('https://media.trafficsafetystore.com/raw/upload/v1598034077/fonts/BadaBoom-BB-V1.woff2') format('woff2'),
+       url('https://media.trafficsafetystore.com/raw/upload/v1598034797/fonts/BadaBoom-BB-V1.woff') format('woff'),
+       url('https://media.trafficsafetystore.com/raw/upload/v1598034797/fonts/BadaBoom-BB-V1.ttf') format('ttf');
+}
+
+body {
+  background-color: #efefef !important;
+  padding-bottom: 100px !important; }
+
+#badaboom, .cta-font {
+font-family: 'Badaboom', sans-serif !important; }
+
 h1 {
-  -webkit-text-stroke: 2px black; }
+  font-size: 4rem !important;
+  color: #fedd00 !important; 
+  -webkit-text-stroke: 2px black !important;
+}
 
 h2 {
-  color: #fedd00;
-  -webkit-text-stroke: 1.5px black; }
+  display: flex !important; 
+  justify-content: center;
+  flex-direction: column;
+  line-height: .5 !important;
+  text-align: center !important;
+  font-size: 2.5rem !important;
+  color: #fedd00 !important;
+  stroke: .5px  !important; 
+  -webkit-text-stroke: 1px #182749 !important;
+  }
+
+.sales-h3 {
+  font-size: 2.5rem !important; }
+
+.sales-p {
+  font-size: 1rem !important; }
+
+a:hover {
+  text-decoration: none !important; }
+
+.cta-btn {
+  border-radius: 3px !important; 
+  margin: 10px 0 !important;}
+
+.rotated {
+  transform: rotate(-5deg) !important;
+  margin-bottom: 20px !important; }
+
+.spaced {
+  line-height: 1 !important;
+  letter-spacing: .2rem !important;
+  word-spacing: .5rem !important;
+}
+
+.container {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  margin-top: 50px !important; }
 
 button, input {
-  border-radius: 2px; }
+  border-radius: 2px !important; 
+}
+
+.testimonial img {
+    width: 150px;
+}
+
+/* This lets you put a span around text you want on one line*/
+.new-line::before {
+  content: "\a" !important;
+  white-space: pre !important;
+  line-height: 0 !important;
+ }
+
+@media (min-width: 768px) {
+  .new-line::before {
+    content: " " !important;
+    white-space: pre !important; 
+  }
+
+  h2{
+    font-size: 3rem !important;
+    flex-direction: row !important;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  h1 {
+    text-shadow:
+     -2px -2px 0 #182749,  
+      2px -2px 0 #182749,
+      -2px 2px 0 #182749,
+       2px 2px 0 #182749;
+  }
+
+  h2 {
+    text-shadow:
+     -2px -2px 0 #182749,  
+      2px -2px 0 #182749,
+      -2px 2px 0 #182749,
+       2px 2px 0 #182749;
+  }
+
+  .spaced {
+    width: 700px !important;
+  }
+}
 
 /*///////////////////
     Hero Section
 */
 .hero {
-  text-align: left;
-  background-image: url("../assets/images/img-desktop2-hero-blank.png");
-  background-position-x: center; }
+  /* Set background image on specific page CSS */
+  height: 600px !important;
+  padding: 0 !important;
+  text-align: right !important;
+  display: fle !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  background-image: url("https://media.trafficsafetystore.com/image/upload/v1598281280/SalesPages/img-desktop2-hero-blank.png") !important;
+  background-position-x: center !important;
+}
 
 .hero-form {
-  background: none;
-  text-align: left; }
+  height: 100% !important;
+  width: 100% !important;
+  text-align: right !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  padding: 0 5% !important;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.7) 100%) !important; }
+  .hero-form b, .hero-form label {
+    color: #fff !important; }
+
+.form-group {
+  margin-top: 10px !important;
+  width: 300px !important; }
+
+.cta-btn {
+  max-width: 300px !important;
+  width: 100% !important;
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important; 
+    background-image: none !important;}
+
+.cta-btn:hover{
+    background-color: #005ec5 !important;
+    border-color: #005ec5 !important; 
+}
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
 @media (min-width: 768px) {
-  h1 {
-    -webkit-text-stroke: 3px black; }
+  .hero {
+    text-align: center !important;
+  }
+  
   .hero-form {
-    text-align: center; } }
+    text-align: center !important;
+    align-items: center !important;
+  } 
+}
 
-@media (min-width: 576px) {
-  h2 {
-    -webkit-text-stroke: 2px black; } }
+@media (min-width: 992px) {
+  .hero-form {
+    padding-right: 5% !important;
+    background: none !important;
+    max-width: 1000px !important;
+    background: none !important; 
+  } 
+}
+
+/*///////////////////
+    Info Section
+*/
+
+.info-container{
+    display: flex!important;
+    flex-direction: column!important;
+}
+
+.info {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  margin-top: 40px !important; }
+
+.info img {
+  padding: 0 !important; }
+
+.info p {
+  padding: 10px 0 0 !important; }
+
+.info-text {
+  margin-top: 15px !important; }
+
+@media (min-width: 992px) {
+  .info {
+    flex-direction: row !important; }
+  .info img {
+    padding-right: 30px !important; } }
 
 /*///////////////////
     Item Section
 */
 .item {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #182749; }
+  margin-top: 40px !important;
+  padding: 20px !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  background-color: #182749 !important;
+  height: 700px !important;
+  
+}
 
 .item img {
-  margin: 5px 0;
-  -webkit-box-shadow: 1px 1px 1px 1px #D4D4D4;
-  box-shadow: 1px 1px 1px 1px #D4D4D4; }
+  margin: 5px 0 !important;
+  -webkit-box-shadow: 1px 1px 1px 1px #D4D4D4 !important;
+  box-shadow: 1px 1px 1px 1px #D4D4D4 !important; 
+}
 
 .item b {
-  color: #fff; }
+  color: #fff !important; }
 
 .item-image {
-  position: relative; }
+  position: relative !important; }
 
 .price {
-  background-image: url("../assets/images/starburst-orange.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  top: -30px;
-  right: -30px;
-  text-align: center;
-  vertical-align: middle; }
+  background-image: url("https://media.trafficsafetystore.com/image/upload/v1598281267/SalesPages/starburst-orange.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  width: 100px !important;
+  height: 100px !important;
+  top: -30px !important;
+  right: -30px !important;
+  text-align: center !important;
+  vertical-align: middle !important; }
 
 .price::after {
-  content: "";
-  z-index: -1; }
+  content: "" !important;
+  z-index: -1 !important; }
 
 .price-text {
-  margin: auto; }
+  display: flex !important;
+  justify-content: center !important;
+  height: 95px !important;
+  flex-direction: column !important;}
 
 .price-text b {
-  margin: 0;
-  font-size: 1rem;
-  color: #fff;
-  line-height: 1.2; }
+  margin: 0 !important;
+  font-size: 1rem !important;
+  color: #fff !important;
+  line-height: 1.2 !important; }
 
 .price-text b:last-child {
-  font-family: 'Badaboom', 'Impact', fantasy;
-  font-size: 1.5rem;
-  font-weight: 500; }
+  font-family: 'Badaboom', 'Impact', fantasy !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important; }
 
 .item button {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: 10px;
-  background-color: #FF7400;
-  border-color: #FF7400; }
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  margin-top: 10px !important;
+  background-color: #FF7400 !important;
+  border-color: #FF7400 !important; }
 
 .item button:hover {
-  background-color: #df6400;
-  border-color: #df6400; }
+  background-color: #df6400 !important;
+  border-color: #df6400 !important; }
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
-@media (min-width: 768px) {
-  .price {
-    width: 90px;
-    height: 90px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .price {
-    width: 100px;
-    height: 100px; } }
+    width: 100px !important;
+    height: 100px !important; }
+
+    .item {
+      height: 450px !important;
+    }
+}
 
 /*///////////////////
     Contact Section
 */
+.contact{
+  margin: 70px 25px !important;
+}
+
 .contact p {
-  font-family: 'Badaboom', 'Impact', fantasy;
-  font-size: 2rem;
-  margin: 0px; }
+  font-family: 'Badaboom', 'Impact', fantasy !important;
+  font-size: 2rem !important;
+  margin: 0px !important; }
 
 .contact a, .contact button {
-  font-family: 'Badaboom', 'Impact', fantasy;
-  margin-top: 5px;
-  white-space: pre-wrap;
+  font-family: 'Badaboom', 'Impact', fantasy !important;
+  margin-top: 5px !important;
+  white-space: pre-wrap !important;
   /* css-3 */
-  white-space: -moz-pre-wrap;
+  white-space: -moz-pre-wrap !important;
   /* Mozilla, since 1999 */
-  white-space: -pre-wrap;
+  white-space: -pre-wrap !important;
   /* Opera 4-6 */
-  white-space: -o-pre-wrap;
+  white-space: -o-pre-wrap !important;
   /* Opera 7 */
-  word-wrap: break-word; }
+  word-wrap: break-word !important; }
 
 .contact a {
-  font-size: 2rem; }
+  font-size: 2rem !important; }
 
 .contact button {
-  font-size: 1.5rem;
-  margin: 0; }
+  font-size: 1.5rem !important;
+  margin: 0 !important; }
 
 .contact-text {
-  height: 280px;
-  margin-top: 10px; }
+  text-align: center;
+  height: 280px !important;
+  margin-top: 10px !important;
+}
 
 .call, .email {
-  text-align: center; }
+  text-align: center !important; }
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
 @media (min-width: 992px) {
   .call, .email {
-    text-align: left; } }
+    text-align: left !important; } 
+  
+  .contact-text{
+    text-align: left;
+  }
+}
